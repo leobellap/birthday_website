@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card-image {
+    @apply h-48 rounded-[20px] border border-blue-400 object-contain p-[20px];
+  }
+  .card-description {
+    @apply rounded-[20px] border border-blue-400 px-[10px] py-[5px] transition hover:bg-slate-100;
+  }
+}
