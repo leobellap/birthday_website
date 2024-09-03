@@ -4,9 +4,15 @@
 
 @layer components {
   .card-image {
-    @apply h-48 rounded-[20px] border border-blue-400 object-contain p-[20px];
+    @apply h-56 rounded-[20px] border-blue-100 bg-white object-contain p-[20px];
   }
   .card-description {
-    @apply rounded-[20px] border border-blue-400 px-[10px] py-[5px] transition hover:bg-slate-100;
+    @apply mb-[10px] rounded-[20px] border-blue-100 bg-gray-100 px-[20px] py-[10px] transition hover:bg-yellow-400;
+  }
+  .card {
+    @apply rounded-[20px] border-gray-200 bg-gray-100;
+  }
+  .h-line {
+    @apply rounded-[20px] border-gray-200;
   }
 }

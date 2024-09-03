@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <link rel="stylesheet" href="/src/static/tw.css" />
     <link
       rel="shortcut icon"
@@ -12,34 +22,66 @@
     <title>Document</title>
   </head>
   <body
-    class="mx-auto my-[40px] flex max-w-[1200px] flex-col gap-[90px] rounded-[20px] p-[40px] font-mono"
+    class="mx-auto my-[40px] flex max-w-[1200px] flex-col gap-[60px] rounded-[20px] bg-gray-100 p-[40px] font-mono text-gray-800 selection:bg-yellow-300"
   >
     <header class="flex flex-col gap-[10px]">
       <div class="flex items-center gap-[10px]">
-        <img class="h-8" src="/src/static/images/cat.png" alt="" />
-        <h1 class="">Hello, darlings!</h1>
+        <!-- <img class="h-8" src="/src/static/images/cat.png" alt="" /> -->
+        <h1 class="text-[32px] font-semibold">birthday wishlist 🎉</h1>
       </div>
-      <hr class="border-[2px] border-blue-300" />
+      <hr class="h-line" />
     </header>
 
     <section class="flex flex-col gap-[60px] text-[16px]">
-      <div class="grid grid-cols-4 gap-[20px]">
-        <div class="rounded-[20px] border border-blue-400 p-[20px] text-center">
+      <div class="flex flex-col gap-[20px]">
+        <div
+          class="flex w-fit flex-col gap-[10px] rounded-[20px] bg-white px-[20px] py-[10px]"
+        >
+          <p>1. Посмотри список подарков ниже</p>
+          <p>2. Запиши название подарка в табличку</p>
+          <p>3. Можно дарить не только предметы из моего списка &#128522;</p>
+        </div>
+        <a
+          href="https://docs.google.com/spreadsheets/d/1Dxepy2lfeBI1ormZw7paqjMkcI5NbILiWkKx4kOPsxA/edit?usp=sharing"
+          target="_blank"
+        >
+          <div
+            class="card flex w-fit items-center gap-[20px] bg-yellow-400 px-[20px] py-[10px] text-left transition hover:bg-yellow-300"
+          >
+            <p>Записать название подарка</p>
+            <span class="material-symbols-outlined"> chevron_right </span>
+          </div>
+        </a>
+      </div>
+
+      <div
+        class="grid grid-cols-3 gap-x-[20px] gap-y-[40px] max-lg:grid-cols-2 max-sm:grid-cols-1"
+      >
+        <div class="card">
           <div class="flex flex-col gap-[10px]">
             <img
               class="card-image"
-              src="https://ir-2.ozone.ru/s3/multimedia-j/wc1000/6442653319.jpg"
+              src="https://ir-2.ozone.ru/s3/multimedia-4/wc1000/6442651828.jpg"
               alt=""
             />
             <a
               href="https://www.ozon.ru/product/oxford-bloknot-a5-14-8-21-sm-listov-72-755913880/?avtc=1&avte=2&avts=1725112645"
               target="_blank"
             >
-              <p class="card-description">Oxford, блокнот A5</p>
+              <div class="card-description flex flex-col gap-[10px]">
+                <div class="flex flex-col gap-[5px]">
+                  <p class="font-bold">Oxford</p>
+                  <hr />
+                </div>
+                <div class="flex items-center justify-between">
+                  <p>блокнот A5</p>
+                  <span class="material-symbols-outlined"> chevron_right </span>
+                </div>
+              </div>
             </a>
           </div>
         </div>
-        <div class="rounded-[20px] border border-blue-400 p-[20px] text-center">
+        <div class="card">
           <div class="flex flex-col gap-[10px]">
             <img
               class="card-image"
@@ -50,11 +92,20 @@
               href="https://www.ozon.ru/product/leuchtturm1917-zapisnaya-knizhka-a5-14-8-21-sm-listov-123-662500051/?asb2=F3AnwpTxQtGFujRXSjb400oOL_8bypl1TqTFa_wqtDFmz10uXPc29j0vzp4L6qXUQdEiAicKyh8_rmWhwkKA6w&avtc=1&avte=4&avts=1725312152"
               target="_blank"
             >
-              <p class="card-description">Leuchtturm1917, записная книжка A5</p>
+              <div class="card-description flex flex-col gap-[10px]">
+                <div class="flex flex-col gap-[5px]">
+                  <p class="font-bold">Leuchtturm1917</p>
+                  <hr />
+                </div>
+                <div class="flex items-center justify-between">
+                  <p>блокнот A5</p>
+                  <span class="material-symbols-outlined"> chevron_right </span>
+                </div>
+              </div>
             </a>
           </div>
         </div>
-        <div class="rounded-[20px] border border-blue-400 p-[20px] text-center">
+        <div class="card">
           <div class="flex flex-col gap-[10px]">
             <img
               class="card-image"
@@ -65,11 +116,20 @@
               href="https://www.ozon.ru/product/zapisnaya-knizhka-rhodiarama-v-myagkoy-oblozhke-a5-tochka-90-g-celadon-bledno-zelenyy-768426652/?avtc=1&avte=2&avts=1725113181"
               target="_blank"
             >
-              <p class="card-description">Rhodiarama, записная книжка</p>
+              <div class="card-description flex flex-col gap-[10px]">
+                <div class="flex flex-col gap-[5px]">
+                  <p class="font-bold">Rhodiarama</p>
+                  <hr />
+                </div>
+                <div class="flex items-center justify-between">
+                  <p>записная книжка</p>
+                  <span class="material-symbols-outlined"> chevron_right </span>
+                </div>
+              </div>
             </a>
           </div>
         </div>
-        <div class="rounded-[20px] border border-blue-400 p-[20px] text-center">
+        <div class="card">
           <div class="flex flex-col gap-[10px]">
             <img
               class="card-image"
@@ -80,28 +140,48 @@
               href="https://www.ozon.ru/product/ruchka-perevaya-lamy-018-safari-zheltyy-f-147621541/?avtc=1&avte=2&avts=1725113181"
               target="_blank"
             >
-              <p class="card-description">
-                Lamy Safari, ручка перьевая, желтая, толщина F
-              </p>
+              <div class="card-description flex flex-col gap-[10px]">
+                <div class="flex flex-col gap-[5px]">
+                  <p class="font-bold">Lamy Safari</p>
+                  <hr />
+                </div>
+                <div class="flex justify-between">
+                  <div>
+                    <p>ручка перьевая</p>
+                    <p>жёлтая</p>
+                    <p>толщина F/M</p>
+                  </div>
+                  <span class="material-symbols-outlined"> chevron_right </span>
+                </div>
+              </div>
             </a>
           </div>
         </div>
-        <div class="rounded-[20px] border border-blue-400 p-[20px] text-center">
+        <div class="card">
           <div class="flex flex-col gap-[10px]">
             <img
               class="card-image"
-              src="https://ir-2.ozone.ru/s3/multimedia-v/wc1000/6650693671.jpg"
+              src="https://ir-2.ozone.ru/s3/multimedia-z/wc1000/6651668231.jpg"
               alt=""
             />
             <a
               href="https://www.ozon.ru/product/clairefontaine-bloknot-a5-14-8-21-sm-listov-70-783214343/?avtc=1&avte=2&avts=1725113181"
               target="_blank"
             >
-              <p class="card-description">Clairefontaine, блокнот A5</p>
+              <div class="card-description flex flex-col gap-[10px]">
+                <div class="flex flex-col gap-[5px]">
+                  <p class="font-bold">Clairefontaine</p>
+                  <hr />
+                </div>
+                <div class="flex items-center justify-between">
+                  <p>блокнот A5</p>
+                  <span class="material-symbols-outlined"> chevron_right </span>
+                </div>
+              </div>
             </a>
           </div>
         </div>
-        <div class="rounded-[20px] border border-blue-400 p-[20px] text-center">
+        <div class="card">
           <div class="flex flex-col gap-[10px]">
             <img
               class="card-image"
@@ -112,13 +192,20 @@
               href="https://www.ozon.ru/product/filosofiya-komu-ona-nuzhna-rend-ayn-229287760/?avtc=1&avte=2&avts=1725113249"
               target="_blank"
             >
-              <p class="card-description">
-                Философия: Кому она нужна? | Рэнд Айн
-              </p>
+              <div class="card-description flex flex-col gap-[10px]">
+                <div class="flex flex-col gap-[5px]">
+                  <p class="font-bold">Философия: Кому она нужна?</p>
+                  <hr />
+                </div>
+                <div class="flex items-center justify-between">
+                  <p>Рэнд Айн</p>
+                  <span class="material-symbols-outlined"> chevron_right </span>
+                </div>
+              </div>
             </a>
           </div>
         </div>
-        <div class="rounded-[20px] border border-blue-400 p-[20px] text-center">
+        <div class="card">
           <div class="flex flex-col gap-[10px]">
             <img
               class="card-image"
@@ -129,11 +216,20 @@
               href="https://www.ozon.ru/product/istochnik-rend-ayn-241512925/?avtc=1&avte=2&avts=1725113249"
               target="_blank"
             >
-              <p class="card-description">Источник | Рэнд Айн</p>
+              <div class="card-description flex flex-col gap-[10px]">
+                <div class="flex flex-col gap-[5px]">
+                  <p class="font-bold">Источник</p>
+                  <hr />
+                </div>
+                <div class="flex items-center justify-between">
+                  <p>Рэнд Айн</p>
+                  <span class="material-symbols-outlined"> chevron_right </span>
+                </div>
+              </div>
             </a>
           </div>
         </div>
-        <div class="rounded-[20px] border border-blue-400 p-[20px] text-center">
+        <div class="card">
           <div class="flex flex-col gap-[10px]">
             <img
               class="card-image"
@@ -144,30 +240,70 @@
               href="https://www.ozon.ru/product/beseda-pyanogo-s-trezvym-chertom-chehov-anton-pavlovich-609313339/?avtc=1&avte=2&avts=1725113249"
               target="_blank"
             >
-              <p class="card-description">
-                Беседа пьяного с трезвым чертом | Чехов Антон Павлович
-              </p>
+              <div class="card-description flex flex-col gap-[10px]">
+                <div class="flex flex-col gap-[5px]">
+                  <p class="font-bold">Беседа пьяного с трезвым чертом</p>
+                  <hr />
+                </div>
+                <div class="flex justify-between">
+                  <p>Чехов Антон Павлович</p>
+                  <span class="material-symbols-outlined"> chevron_right </span>
+                </div>
+              </div>
             </a>
           </div>
         </div>
-        <div class="rounded-[20px] border border-blue-400 p-[20px] text-center">
+        <div class="card">
           <div class="flex flex-col gap-[10px]">
             <img
               class="card-image"
-              src="https://ir-2.ozone.ru/s3/multimedia-q/wc1000/6151140986.jpg"
+              src="https://ir-2.ozone.ru/s3/multimedia-1-j/wc1000/7113305251.jpg"
               alt=""
             />
             <a
-              href="https://www.ozon.ru/product/beseda-pyanogo-s-trezvym-chertom-chehov-anton-pavlovich-609313339/?avtc=1&avte=2&avts=1725113249"
+              href="https://www.ozon.ru/product/gibel-imperii-uroki-dlya-sovremennoy-rossii-gaydar-egor-timurovich-250438294/?avtc=1&avte=2&avts=1725382733"
               target="_blank"
             >
-              <p class="card-description">
-                Беседа пьяного с трезвым чертом | Чехов Антон Павлович
-              </p>
+              <div class="card-description flex flex-col gap-[10px]">
+                <div class="flex flex-col gap-[5px]">
+                  <p class="font-bold">
+                    Гибель империи. Уроки для современной России
+                  </p>
+                  <hr />
+                </div>
+                <div class="flex justify-between">
+                  <p>Гайдар Егор Тимурович</p>
+                  <span class="material-symbols-outlined"> chevron_right </span>
+                </div>
+              </div>
             </a>
           </div>
         </div>
-        <div class="rounded-[20px] border border-blue-400 p-[20px] text-center">
+        <div class="card">
+          <div class="flex flex-col gap-[10px]">
+            <img
+              class="card-image"
+              src="https://ir-2.ozone.ru/s3/multimedia-v/wc1000/6407964091.jpg"
+              alt=""
+            />
+            <a
+              href="https://www.ozon.ru/product/dolgoe-vremya-rossiya-v-mire-ocherki-ekonomicheskoy-istorii-gaydar-egor-timurovich-709481820/?avtc=1&avte=2&avts=1725382733"
+              target="_blank"
+            >
+              <div class="card-description flex flex-col gap-[10px]">
+                <div class="flex flex-col gap-[5px]">
+                  <p class="font-bold">Долгое время. Россия в мире</p>
+                  <hr />
+                </div>
+                <div class="flex justify-between">
+                  <p>Гайдар Егор Тимурович</p>
+                  <span class="material-symbols-outlined"> chevron_right </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="card">
           <div class="flex flex-col gap-[10px]">
             <img
               class="card-image"
@@ -178,13 +314,20 @@
               href="https://www.ozon.ru/product/zapiski-ohotnika-turgenev-ivan-sergeevich-609332946/?avtc=1&avte=2&avts=1725113272"
               target="_blank"
             >
-              <p class="card-description">
-                Записки охотника | Тургенев Иван Сергеевич
-              </p>
+              <div class="card-description flex flex-col gap-[10px]">
+                <div class="flex flex-col gap-[5px]">
+                  <p class="font-bold">Записки охотника</p>
+                  <hr />
+                </div>
+                <div class="flex justify-between">
+                  <p>Тургенев Иван Сергеевич</p>
+                  <span class="material-symbols-outlined"> chevron_right </span>
+                </div>
+              </div>
             </a>
           </div>
         </div>
-        <div class="rounded-[20px] border border-blue-400 p-[20px] text-center">
+        <div class="card">
           <div class="flex flex-col gap-[10px]">
             <img
               class="card-image"
@@ -195,23 +338,30 @@
               href="https://www.ozon.ru/product/monstr-tom-1-637201100/?__rr=2&asb=8Wj8agOunCHL1sgc2Q2nhT%252FTu2xXp9KehIBl%252FP2lLOI%253D&asb2=wRpePMymFj-TpmDDnKGM_X16tUy8aRzvKKcSfM4cFviTC8buzsn89ldBAB0CE8OWWVGdtjV9-miSrmGLTFahTQ&avtc=1&avte=2&avts=1725113743&keywords=%D0%BC%D0%B0%D0%BD%D0%B3%D0%B0%2B%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80&tab=reviews"
               target="_blank"
             >
-              <p class="card-description">Монстр. Том 1</p>
+              <div class="card-description flex flex-col gap-[10px]">
+                <div class="flex flex-col gap-[5px]">
+                  <p class="font-bold">Монстр. Том 1</p>
+                  <hr />
+                </div>
+                <div class="flex justify-between">
+                  <p>Наоки Урасава</p>
+                  <span class="material-symbols-outlined"> chevron_right </span>
+                </div>
+              </div>
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <footer>
+    <!-- <footer>
       <div class="flex flex-col gap-[10px]">
-        <hr class="rounded-[20px] border-[2px] border-blue-300" />
-        <p>footer!</p>
-        <a
-          href="https://docs.google.com/spreadsheets/d/1Dxepy2lfeBI1ormZw7paqjMkcI5NbILiWkKx4kOPsxA/edit?usp=sharing"
-          target="_blank"
-          >Click here to take a slot!</a
-        >
+        <hr class="h-line" />
+        <div class="flex justify-between">
+          <p class="text-[16px] hover:font-bold">made by bellap</p>
+          <img class="h-4" src="src/static/images/github-mark.svg" alt="" />
+        </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

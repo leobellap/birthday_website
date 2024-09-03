@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./index.html", "./dist/index.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        comfortaa: '"Comfortaa", sans-serif',
+      },
+    },
   },
   plugins: [],
 };
