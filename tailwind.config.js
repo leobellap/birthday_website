@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         comfortaa: '"Comfortaa", sans-serif',
+        libre_franklin: '"Libre Franklin", sans-serif',
       },
     },
   },
