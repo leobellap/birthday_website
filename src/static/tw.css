@@ -7,7 +7,7 @@
     @apply h-96 rounded-[20px] border-blue-100 bg-white object-contain p-[20px];
   }
   .card-description {
-    @apply mb-[10px] rounded-[20px] border-blue-100 bg-gray-100 px-[20px] py-[10px] transition hover:bg-yellow-400;
+    @apply mb-[10px] rounded-[20px] border-blue-100 bg-gray-100 px-[20px] py-[10px] transition;
   }
   .card {
     @apply rounded-[20px] border-gray-200 bg-gray-100;
